@@ -16,6 +16,7 @@
 }
 
 .preferenses__titles{
+
     font-style: normal;
     font-size: 14px;
     font-weight: 700;
@@ -23,11 +24,26 @@
 
     margin-bottom: 10px;
     color: var(--headers-font-color);
+
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
+        text-align: center;
+    }
+
+
 }
 .preferenses__text{
     line-height: 1.71;
 }
 
 .mainfo{
-    flex-basis: calc((100% - 4 * 30px) / 4 );
+
+    flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2 );
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4 );
+    }
 }

@@ -2,7 +2,11 @@
     background: var(--grey-background);
 }
 .team__item{
-    flex-basis: calc((100% - 4 * 30px) / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
 
     font-size: 16px;
     font-weight: 500;
@@ -12,6 +16,16 @@
     background: var(--white-main-and-other);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
 }
 .team__block{
     margin-bottom: 30px;
@@ -54,6 +68,7 @@ margin-right: 10px;
 
 
 .team__socials-icons{
+    
     width: 20px;
     height: 20px;
     fill: var(--svg-icons);

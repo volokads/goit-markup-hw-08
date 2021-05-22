@@ -1,17 +1,26 @@
-.clients__list{
-    display: flex;  
-}
-.clients__link{
+.clients__item{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    padding-top: auto;
+    padding-bottom: auto;
     height: 90px;
     border: 1px solid var(--svg-icons);
     box-sizing: border-box;
     border-radius: 4px;
 
     transition: border var(--animation);
+
+    flex-basis: calc((100% - 2 * 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 6 * 30px) / 6);
+
+    }
 
     &:hover,
     &:focus{
@@ -20,15 +29,38 @@
     border-radius: 4px;
     }
 }
-.clients__item:not(:last-child){
-    margin-right: 30px;
-}
+// .clients__link{
+//     // display: inline-flex;
+//     // align-items: center;
+//     // justify-content: center;
+//     // padding: auto;
+//     // width: 210px;
+//     // height: 90px;
+//     border: 1px solid var(--svg-icons);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+
+//     transition: border var(--animation);
+
+//     @media screen and (min-width: 1200px){
+//         // width: 170px;
+//         // height: 90px;
+//     }
+
+//     &:hover,
+//     &:focus{
+//     border: 1px solid var(--other-fonts);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     }
+// }
+
 .clients__icon{
     fill: var(--svg-icons);
 
     transition: fill var(--animation);
-    .clients__link:hover &,
-    .clients__link:focus &{
+    .clients__item:hover &,
+    .clients__item:focus &{
     fill: var(--other-fonts);}
 
 }
