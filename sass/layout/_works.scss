@@ -1,0 +1,27 @@
+.works{
+    padding-top: 0;
+}
+.works__items{
+    position: relative;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+}
+.works__overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+
+    background:  rgba(47, 48, 58, 0.8);
+    z-index: 2;
+    bottom: 2px;
+}
+.works__overlay-text{
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-main-and-other);
+}

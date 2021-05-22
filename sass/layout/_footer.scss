@@ -1,0 +1,129 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+.footer-section{
+    display: flex;
+}
+.footer__logo{
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-main-and-other);
+    text-decoration: none;
+}
+
+.footer__address{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__address-item{
+    line-height: 1.71;
+    color: var(--white-main-and-other);
+    text-decoration: none;
+    font-style: normal;
+    text-decoration: none;
+
+    margin-bottom: 9px
+}
+.footer__contacts{
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+
+    transition: color var(--animation);
+
+    margin-bottom: 9px;
+
+    &:hover,
+    &:focus{
+    color: var(--other-fonts);
+    cursor: pointer;
+    }
+}
+
+.footer__join-us{
+    display: block;
+    margin-left: 70px;
+}
+.footer__join-us-text{
+    display: block;
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-main-and-other);
+}
+.footer__socials{
+    display: flex;
+}
+
+.footer__socials-item:not(:last-child){
+    margin-right: 10px;
+}
+.footer__socials-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus{
+    background-color: var(--other-fonts);
+    }
+}
+
+.footer__socials-icons{
+    width: 20px;
+    height: 20px;
+    fill: var(--white-main-and-other);
+}
+.footer__subscribe-form{
+    display: block;
+    margin-left: 93px;
+}
+.subscribe{
+    display: flex;
+    
+}
+.sub__input{
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+.sub__label::placeholder{
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+.sub__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 28px;
+    margin-left: 12px;
+}
+.sub__svg{
+    margin-left: 10px;
+}

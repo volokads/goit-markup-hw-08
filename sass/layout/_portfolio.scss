@@ -1,0 +1,117 @@
+.portfolio__btn-list{
+    display: flex;
+    justify-content: center;
+}
+.potfolio__btn-item{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.potfolio__btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+.potfolio__btn{
+    display: inline-block;
+    background: var(--grey-background);
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0px;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--headers-font-color);
+
+    transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+
+    &:hover,
+    &:focus{
+    color: var(--white-main-and-other);
+    background-color: var(--other-fonts);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: pointer; 
+    }
+}
+.potfolio__examples{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.portfolio__card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.portfolio__item--link{
+    text-decoration: none;
+
+    overflow: hidden;
+    transition: box-shadow var(--animation);
+
+    &:hover,
+    &:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.portfolio__item-img{
+    display: block;
+}
+
+.portfolio__overlay-group{
+    position: relative;
+    max-width: 370px;
+    max-height: 294px;
+}
+
+.portfolio__overlay-item{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(33, 150, 243, 0.9);;
+    top: 0;
+    transition: transform var(--animation);
+    transform: translatey(101%);
+
+    .portfolio__item--link:hover &,
+    .portfolio__item--link:focus &{
+    transform: translatey(0);
+    }
+
+}
+.portfolio__overlay-text{
+    margin: 63px 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--white-main-and-other);
+}
+
+.portfolio__card--boxes{
+    position: relative;
+    z-index: 5;
+    padding: 20px 24px;
+    background: var(--white-main-and-other);
+    border: 1px solid #EEEEEE;
+} 
+.portfolio__card{
+    flex-basis: calc((100% - 3 * 30px) / 3);
+}  
+.portfolio__card-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--headers-font-color);
+}
+.porfolio__cards-txt{
+    display: inline-block;
+    
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-font-color);
+}

@@ -1,0 +1,19 @@
+.btn{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.058em;
+
+    color: var(--white-main-and-other);
+    background: var(--other-fonts);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+
+}

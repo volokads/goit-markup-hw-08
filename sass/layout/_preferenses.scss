@@ -1,0 +1,33 @@
+.preferenses__svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background: var(--grey-background);
+    border-radius: 4px;
+}
+
+.preferenses__svg--icons{
+    width: 70px;
+    height: 70px;
+}
+
+.preferenses__titles{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    color: var(--headers-font-color);
+}
+.preferenses__text{
+    line-height: 1.71;
+}
+
+.mainfo{
+    flex-basis: calc((100% - 4 * 30px) / 4 );
+}
