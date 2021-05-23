@@ -6,7 +6,13 @@
 .page-header__container{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+        
+    }
+
 }
 
 .web-logo{
@@ -127,5 +133,6 @@
     .page-header__contacts:focus &,
     .page-header__contacts:hover &{
     fill: var(--other-fonts);
+    }
 }
-}
+
