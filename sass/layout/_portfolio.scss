@@ -1,13 +1,21 @@
 .portfolio__btn-list{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+}
+.portfolio__btn-list{
+    margin-bottom: 50px;
 }
 .potfolio__btn-item{
     display: inline-block;
-    margin-bottom: 50px;
+    
 }
 .potfolio__btn-item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
 }
 .potfolio__btn{
     display: inline-block;
@@ -34,12 +42,12 @@
     cursor: pointer; 
     }
 }
-.potfolio__examples{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-}
+// .potfolio__examples{
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -30px;
+//     margin-left: -30px;
+// }
 .portfolio__card{
     display: flex;
     flex-direction: column;
