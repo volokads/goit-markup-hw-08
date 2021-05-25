@@ -1349,12 +1349,13 @@ input:-webkit-autofill:focus {
 
 .portfolio__card {
   display: flex;
-  flex-direction: column;
   margin-top: 30px;
   margin-left: 30px;
 }
 
 .portfolio__item--link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   overflow: hidden;
   transition: box-shadow var(--animation);
@@ -1390,14 +1391,32 @@ input:-webkit-autofill:focus {
 }
 
 .portfolio__overlay-text {
-  margin: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-main-and-other);
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio__overlay-text {
+    margin: 75px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__overlay-text {
+    margin: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay-text {
+    margin: 63px 24px;
+  }
+}
+
 .portfolio__card--boxes {
+  flex-grow: 1;
   position: relative;
   z-index: 5;
   padding: 20px 24px;
@@ -1405,8 +1424,16 @@ input:-webkit-autofill:focus {
   border: 1px solid #EEEEEE;
 }
 
-.portfolio__card {
-  flex-basis: calc((100% - 3 * 30px) / 3);
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__card {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .portfolio__card-title {
