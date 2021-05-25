@@ -9,10 +9,18 @@
     padding: 200px 0;
     background: #C4C4C4;
 
-    background-image: url(../img/hero.jpg);
+    background-image: url('../../img/gallery/desctop/header_img.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;     
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     &{
+      background-image: url('../../img/gallery/desctop/header-img@2x.jpg');
+    }
 
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
