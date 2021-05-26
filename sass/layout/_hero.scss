@@ -9,7 +9,7 @@
     padding: 200px 0;
     background: #C4C4C4;
 
-    background-image: url('../../img/gallery/desctop/header-img.jpg');
+    background-image: url('../img/gallery/desctop/header-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;     
@@ -19,7 +19,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         &{
-        background-image: url('../../img/gallery/desctop/header-img@2x.jpg');
+        background-image: url('../img/gallery/desctop/header-img@2x.jpg');
         }
     }
     @media screen and (min-width: 1200px) {
