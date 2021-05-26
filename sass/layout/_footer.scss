@@ -19,6 +19,7 @@
         flex-wrap: nowrap;
         justify-content: center;
         text-align: start;
+        align-items: baseline;
     }
 }
 .footer__info{
@@ -55,7 +56,6 @@
 .footer__address{
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
@@ -91,7 +91,6 @@
 
 .footer__join-us{
     display: block;
-    margin-bottom: 60px;
     .footer__info &{
         @media screen and(min-width: 768px) and (max-width: 1199.98px) {
             flex-basis: calc((100% - 40px) / 2);

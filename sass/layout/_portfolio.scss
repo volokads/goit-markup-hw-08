@@ -42,19 +42,16 @@
     cursor: pointer; 
     }
 }
-// .potfolio__examples{
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-top: -30px;
-//     margin-left: -30px;
-// }
+
 .portfolio__card{
     display: flex;
-    
+    width: 100%;
     margin-top: 30px;
     margin-left: 30px;
 }
+
 .portfolio__item--link{
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -69,11 +66,12 @@
 }
 .portfolio__item-img{
     display: block;
+    width: 100%;
 }
 
 .portfolio__overlay-group{
     position: relative;
-    max-width: 370px;
+    max-width: 100%;
     max-height: 294px;
 }
 
